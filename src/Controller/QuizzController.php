@@ -78,12 +78,12 @@ class QuizzController extends AbstractController
 		}
 
 
-		$maQuestion = $questionRepository->find($questions[$sessionQuizz->getQuestionNumber()]->getId());
-		dump($maQuestion);
-		$questionTheme = $maQuestion->getThemes();
-		foreach ($questionTheme as $questionTheme) {
-			dump($questionTheme->getName());	
-		}
+		// $maQuestion = $questionRepository->find($questions[$sessionQuizz->getQuestionNumber()]->getId());
+		// dump($maQuestion);
+		// $questionTheme = $maQuestion->getThemes();
+		// foreach ($questionTheme as $questionTheme) {
+		// 	dump($questionTheme->getName());	
+		// }
 
 
 
@@ -183,7 +183,7 @@ class QuizzController extends AbstractController
 
 
 
-			dump($data);
+			// dump($data);
 			//$question = $data['quizz']['questions'];
 
 			$question = new Question;
