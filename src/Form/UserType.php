@@ -34,10 +34,10 @@ class UserType extends AbstractType
 			->add('imageFile', VichImageType ::class, [
 				'required' => false,
 				'allow_delete' => true,
-				'download_uri' => true,
-				'image_uri' => true,
+				'download_uri' => false,
+				'image_uri' => false,
 				'asset_helper' => true,
-				'mapped' => false
+				//'mapped' => false
 				// 'label' => 'Charger une nouvelle image',
 
 				// // unmapped means that this field is not associated to any entity property
