@@ -30,7 +30,7 @@ class UserCrudController extends AbstractCrudController
 			AssociationField::new('friends'),
 			DateField::new('createdAt')
 				->setLabel("Date d'inscription")
-				->setFormat('dd-MM-Y'),
+				// ->setFormat('dd-MM-Y'),
 		];
 	}
 }
